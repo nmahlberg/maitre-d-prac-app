@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <script src="script.js"></script>
+    <title>Tip Calculator</title>
+</head>
+<body>
+    <div>
+        <form onsubmit="calc()">
+            <label for="perecent">Percentage:</label>
+            <input type="number" id="percent" name="percent"><br><br>
+            <label for="amount">Total:</label>
+            <input type="number" id="amount" name="amount"><br><br>
+
+
+            <div id="output">
+                <p id="tip1"></p>
+                <div class="outputLabel">Tip: </div><div class="outputText" id="tip1">$0</div>
+                <div class="outputLabel">Tax: </div><div class="outputText" id="tax">$0</div>
+                <div class="outputLabel">Grand Total: </div><div class="outputText" id="total">$0</div>
+            </div>
+            <input type="submit" value="Calculate!">
+        </form>
+    </div>
+</body>
+</html>
