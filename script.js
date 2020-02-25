@@ -10,10 +10,10 @@
     if (tip > 1) {
         tip = tip / 100;
     }
-    
+    alert(tip * amount);
     document.getElementById("tip1").innerHTML = "$" + tip * amount;
     document.getElementById("tax").innerHTML = "$" + amount * .06225;
-    document.querySelector("total").innerHTML = "$" + amount + (amount * .06225) + (amount * tip);
+    document.getElementById("total").innerHTML = "$" + amount + (amount * .06225) + (amount * tip);
     
 
 }
