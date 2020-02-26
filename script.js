@@ -1,6 +1,7 @@
 ﻿function calc(){
     let tip = document.getElementById("percent").value;
     let amount = document.getElementById("amount").value;
+    
     if (tip == "") {
         alert("Enter something for tip please");
     }
@@ -10,10 +11,9 @@
     if (tip > 1) {
         tip = tip / 100;
     }
-    alert(tip * amount);
-    document.getElementById("tip1").innerHTML = "$" + tip * amount;
-    document.getElementById("tax").innerHTML = "$" + amount * .06225;
-    document.getElementById("total").innerHTML = "$" + amount + (amount * .06225) + (amount * tip);
+    document.getElementById("tip1").innerHTML = "$" + Number(Number(tip) * Number(amount));
+    document.getElementById("tax").innerHTML = "$" + Number(Number(amount) * .06225);
+    document.getElementById("total").innerHTML = "$" + Number(Number(amount) + (Number(amount) * .06225) + (Number(amount) * Number(tip)));
     
 
 }
